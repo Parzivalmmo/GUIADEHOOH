@@ -3,56 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guías PokeMMO</title>
+    <title>Guía para derrotar a HO-OH (10 Turnos) - PokeMMO</title>
     <style>
         body {
             background-color: #121824;
             color: #e2e8f0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
         }
         .container {
-            text-align: center;
+            max-width: 900px;
+            width: 100%;
             background-color: #1e293b;
-            padding: 2.5rem;
+            padding: 30px;
             border-radius: 12px;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
             border: 1px solid #334155;
         }
         h1 {
-            color: #f1f5f9;
-            margin-bottom: 1.5rem;
-            font-size: 2rem;
+            color: #ef4444;
+            text-align: center;
+            font-size: 2.2rem;
+            margin-top: 0;
+            text-transform: uppercase;
+            border-bottom: 2px solid #334155;
+            padding-bottom: 15px;
         }
-        .btn-guia {
+        .subtitle {
+            text-align: center;
+            color: #94a3b8;
+            font-size: 0.9rem;
+            margin-bottom: 25px;
+        }
+        .intro-box {
+            background-color: #0f172a;
+            padding: 15px;
+            border-left: 4px solid #ef4444;
+            border-radius: 4px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        h2 {
+            color: #38bdf8;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 8px;
+            margin-top: 30px;
+        }
+        .grid-pokemon {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        .card-pokemon {
+            background-color: #0f172a;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #334155;
+        }
+        .card-pokemon h3 {
+            margin-top: 0;
+            color: #f1f5f9;
+            border-bottom: 1px dashed #334155;
+            padding-bottom: 5px;
+        }
+        .stats {
+            font-size: 0.9rem;
+            color: #cbd5e1;
+            line-height: 1.5;
+        }
+        .moves {
+            margin-top: 10px;
+            padding-left: 20px;
+            color: #38bdf8;
+            font-weight: bold;
+        }
+        .table-wrapper {
+            overflow-x: auto;
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background-color: #0f172a;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #334155;
+            font-size: 0.95rem;
+        }
+        th {
+            background-color: #1e293b;
+            color: #f1f5f9;
+        }
+        tr:nth-child(even) {
+            background-color: #141e30;
+        }
+        .highlight-turn {
+            color: #ef4444;
+            font-weight: bold;
+            text-align: center;
+        }
+        .tip-box {
+            background-color: #1c2d3d;
+            border-left: 4px solid #38bdf8;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 30px;
+        }
+        .footer-credits {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #334155;
+            color: #64748b;
+            font-size: 0.85rem;
+            line-height: 1.6;
+        }
+        .video-link {
             display: inline-block;
-            background-color: #ef4444; /* Rojo temático Ho-Oh */
-            color: #ffffff;
-            padding: 0.75rem 1.5rem;
-            border-radius: 6px;
+            margin-top: 10px;
+            color: #ef4444;
             text-decoration: none;
             font-weight: bold;
-            transition: background 0.2s, transform 0.1s;
         }
-        .btn-guia:hover {
-            background-color: #dc2626;
-            transform: translateY(-2px);
-        }
-        .btn-guia:active {
-            transform: translateY(0);
+        .video-link:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>Panel de Guías</h1>
-        <a href="GUÍA DE HO-OH.html" class="btn-guia">Ver la Guía de Ho-Oh</a>
-    </div>
+        <h1>Guía para derrotar a HO-OH (10 Turnos)</h1>
+        <div class="subtitle">Última Actualización: 22/11/2025, 11:41 a.m UTC-5 | Por SAMAM - Pokémmo</div>
 
-</body>
-</html>
+        <div class="intro-box">
+            Con esta estrategia podrás derrotar a Ho-Oh (revancha) en solo 10 turnos, completando la run en aproximadamente 8 minutos y obteniendo cerca de 97k de ganancia si vendes los señuelos legendarios a 30k cada uno.
+        </div>
+
+        <h2>Equipo Recomendado (PokePaste)</h2>
+        
+        <div class="grid-pokemon">
+            <div class="card-pokemon">
+                <h3>Chandelure - Nivel 100</h3>
+                <div class="stats">
+                    <strong>Habilidad:</strong> Absor. Fuego<br>
+                    <strong>Naturaleza:</strong> Modesta<br>
+                    <strong>Iv's:</strong> 25 / - / 25 / 31 / 25 / 31<br>
+                    <strong>Ev's:</strong> - / - / 252 / 58 / 200 / -
+                </div>
+                <ul class="moves">
+                    <li>Velo Sagrado</li>
+                    <li>Protección</li>
+                    <li>Más Psique</li>
+                    <li>Bola Sombra</li>
+                </ul>
+            </div>
+
+            <div class="card-pokemon">
+                <h3>Rotom (Horno) - Nivel 100</h3>
+                <div class="stats">
+                    <strong>Habilidad:</strong> Levitación<br>
+                    <strong>Naturaleza:</strong> Mansa<br>
+                    <strong>Iv's:</strong> 25 / - / 25 / 31 / 25 / -<br>
+                    <strong>Ev's:</strong> 6 / - / - / 252 / 252 / -
+                </div>
+                <ul class="moves">
+                    <li>Maquinación</li>
+                    <li>Poder Oculto (Tierra)</li>
+                    <li>Rayo</li>
+                    <li>Pantalla de Luz</li>
+                </ul>
+            </div>
+
+            <div class="card-pokemon">
+                <h3>Lunatone - Nivel 100</h3>
+                <div class="stats">
+                    <strong>Habilidad:</strong> Levitación<br>
+                    <strong>Naturaleza:</strong> Mansa<br>
+                    <strong>Iv's:</strong> 25 / - / 25 / 31 / 25 / 0<br>
+                    <strong>Ev's:</strong> 96 / - / 252 / 166 / - / -
+                </div>
+                <ul class="moves">
+                    <li>Espacio Raro</li>
+                    <li>Protección</li>
+                    <li>Más Psique</li>
+                    <li>Joya de Luz</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Estrategia de Combate Rotativa (10 Turnos)</h2>
+        
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 10%;">Turno</th>
+                        <th style="width: 30%;">Chandelure</th>
+                        <th style="width: 30%;">Rotom</th>
+                        <th style="width: 30%;">Lunatone</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="highlight-turn">T1</td>
+                        <td>Velo Sagrado</td>
+                        <td>Maquinación</td>
+                        <td>Protección</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight-turn">T2</td>
+                        <td>Protección</td>
+                        <td>Maquinación</td>
+                        <td>Espacio Raro</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight-turn">T3</td>
+                        <td>Cambia - Lunatone</td>
+                        <td>P. Oculto / Rayo <br><small>(Suicune, Entei, Raikou)</small></td>
+                        <td>Más Psique <br><small>(A Rotom)</small></td>
+                    </tr>
+                    <tr>
+                        <td class="highlight-turn">T4
