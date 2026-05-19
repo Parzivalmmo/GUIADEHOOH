@@ -136,3 +136,216 @@
             margin-bottom: 30px;
         }
         .footer-credits {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #334155;
+            color: #64748b;
+            font-size: 0.85rem;
+            line-height: 1.6;
+        }
+        .video-link {
+            display: inline-block;
+            margin-top: 10px;
+            color: #ef4444;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .video-link:hover {
+            text-decoration: underline;
+        }
+        .btn-volver {
+            display: inline-block;
+            background-color: #334155;
+            color: #f1f5f9;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .btn-volver:hover {
+            background-color: #475569;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="index.html" class="btn-volver">← Volver al Panel</a>
+
+        <h1>Guía para derrotar a HO-OH (10 Turnos)</h1>
+        <div class="subtitle">Última Actualización: 22/11/2025, 11:41 a.m UTC-5 | Por SAMAM - Pokémmo</div>
+
+        <div class="intro-box">
+            Con esta estrategia podrás derrotar a Ho-Oh (revancha) en solo 10 turnos, completando la run en aproximadamente 8 minutos y obteniendo cerca de 97k de ganancia si vendes los señuelos legendarios a 30k cada uno.
+        </div>
+
+        <h2>Ubicación y Ruta</h2>
+        <img src="mapa.png" alt="Mapa de la ruta" class="img-guia">
+
+        <h2>Equipo Recomendado (PokePaste)</h2>
+        
+        <div class="grid-pokemon">
+            <div class="card-pokemon">
+                <h3>Chandelure - Nivel 100</h3>
+                <div class="sprite-container">
+                    <img src="chandelure.gif" alt="Chandelure" class="sprite-pkmn">
+                </div>
+                <div class="stats">
+                    <strong>Habilidad:</strong> Absor. Fuego<br>
+                    <strong>Naturaleza:</strong> Modesta<br>
+                    <strong>Iv's:</strong> 25 / - / 25 / 31 / 25 / 31<br>
+                    <strong>Ev's:</strong> - / - / 252 / 58 / 200 / -
+                </div>
+                <ul class="moves">
+                    <li>Velo Sagrado</li>
+                    <li>Protección</li>
+                    <li>Más Psique</li>
+                    <li>Bola Sombra</li>
+                </ul>
+            </div>
+
+            <div class="card-pokemon">
+                <h3>Rotom (Horno) - Nivel 100</h3>
+                <div class="sprite-container">
+                    <img src="rotom horno.gif" alt="Rotom Horno" class="sprite-pkmn">
+                </div>
+                <div class="stats">
+                    <strong>Habilidad:</strong> Levitación<br>
+                    <strong>Naturaleza:</strong> Mansa<br>
+                    <strong>Iv's:</strong> 25 / - / 25 / 31 / 25 / -<br>
+                    <strong>Ev's:</strong> 6 / - / - / 252 / 252 / -
+                </div>
+                <ul class="moves">
+                    <li>Maquinación</li>
+                    <li>Poder Oculto (Tierra)</li>
+                    <li>Rayo</li>
+                    <li>Pantalla de Luz</li>
+                </ul>
+            </div>
+
+            <div class="card-pokemon">
+                <h3>Lunatone - Nivel 100</h3>
+                <div class="sprite-container">
+                    <img src="lunatone.gif" alt="Lunatone" class="sprite-pkmn">
+                </div>
+                <div class="stats">
+                    <strong>Habilidad:</strong> Levitación<br>
+                    <strong>Naturaleza:</strong> Mansa<br>
+                    <strong>Iv's:</strong> 25 / - / 25 / 31 / 25 / 0<br>
+                    <strong>Ev's:</strong> 96 / - / 252 / 166 / - / -
+                </div>
+                <ul class="moves">
+                    <li>Espacio Raro</li>
+                    <li>Protección</li>
+                    <li>Más Psique</li>
+                    <li>Joya de Luz</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Objetos Clave y Builds</h2>
+        <img src="objetos.png" alt="Objetos Recomendados" class="img-guia">
+
+        <h2>Estrategia de Combate Rotativa (10 Turnos)</h2>
+        
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width: 10%; text-align: center;">Turno</th>
+                        <th style="width: 30%; text-align: center;">
+                            <img src="chandelure.gif" alt="Chandelure" style="height: 35px; width: auto; display: block; margin: 0 auto 5px auto;">
+                            Chandelure
+                        </th>
+                        <th style="width: 30%; text-align: center;">
+                            <img src="rotom horno.gif" alt="Rotom" style="height: 35px; width: auto; display: block; margin: 0 auto 5px auto;">
+                            Rotom
+                        </th>
+                        <th style="width: 30%; text-align: center;">
+                            <img src="lunatone.gif" alt="Lunatone" style="height: 35px; width: auto; display: block; margin: 0 auto 5px auto;">
+                            Lunatone
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="highlight-turn">T1</td>
+                        <td><img src="chandelure.gif" alt="" style="height: 22px; vertical-align: middle; margin-right: 5px;">Velo Sagrado</td>
+                        <td><img src="rotom horno.gif" alt="" style="height: 22px; vertical-align: middle; margin-right: 5px;">Maquinación</td>
+                        <td><img src="lunatone.gif" alt="" style="height: 22px; vertical-align: middle; margin-right: 5px;">Protección</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight-turn">T2</td>
+                        <td><img src="chandelure.gif" alt="" style="height: 22px; vertical-align: middle; margin-right: 5px;">Protección</td>
+                        <td><img src="rotom horno.gif" alt="" style="height: 22px; vertical-align: middle; margin-right: 5px;">Maquinación</td>
+                        <td><img src="lunatone.gif" alt="" style="height: 22px; vertical-align: middle; margin-right: 5px;">Espacio Raro</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight-turn">T3</td>
+                        <td><img src="chandelure.gif" alt="" style="height: 22px; vertical-align: middle; margin-right: 5px;">Cambia - Lunatone</td>
+                        <td><img src="rotom horno.gif" alt="" style="height: 22px; vertical-align: middle; margin-right: 5px;">P. Oculto / Rayo <br><small>(Suicune, Entei, Raikou)</small></td>
+                        <td><img src="lunatone.gif" alt="" style="height: 22px; vertical-align: middle; margin-right: 5px;">Más Psique <br><small>(A Rotom)</small></td>
+                    </tr>
+                    <tr>
+                        <td class="highlight-turn">T4</td>
+                        <td><img src="chandelure.gif" alt="" style="height: 22px; vertical-align: middle; margin-right: 5px;">Cambia - Lunatone</td>
+                        <td><img src="rotom horno.gif" alt="" style="height: 22px; vertical-align: middle; margin-right: 5px;">P. Oculto / Rayo <br><small>(Suicune, Entei, Raikou)</small></td>
+                        <td><img src="lunatone.gif" alt="" style="height: 22px; vertical-align: middle; margin-right: 5px;">Joya de Luz</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight-turn">T5</td>
+                        <td><img src="chandelure.gif" alt="" style="height: 22px; vertical-align: middle; margin-right: 5px;">Cambia - Lunatone</td>
+                        <td><img src="rotom horno.gif" alt="" style="height: 22px; vertical-align: middle; margin-right: 5px;">Rayo</td>
+                        <td><img src="lunatone.gif" alt="" style="height: 22px; vertical-align: middle; margin-right: 5px;">Joya de Luz</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight-turn">T6</td>
+                        <td><img src="chandelure.gif" alt="" style="height: 22px; vertical-align: middle; margin-right: 5px;">Cambia - Lunatone</td>
+                        <td><img src="rotom horno.gif" alt="" style="height: 22px; vertical-align: middle; margin-right: 5px;">P. Oculto / Rayo <br><small>(Suicune, Entei, Raikou)</small></td>
+                        <td><img src="lunatone.gif" alt="" style="height: 22px; vertical-align: middle; margin-right: 5px;">Joya de Luz</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight-turn">T7</td>
+                        <td><img src="chandelure.gif" alt="" style="height: 22px; vertical-align: middle; margin-right: 5px;">Cambia - Lunatone</td>
+                        <td><img src="rotom horno.gif" alt="" style="height: 22px; vertical-align: middle; margin-right: 5px;">Pantalla de Luz</td>
+                        <td><img src="lunatone.gif" alt="" style="height: 22px; vertical-align: middle; margin-right: 5px;">Espacio Raro</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight-turn">T8</td>
+                        <td><img src="chandelure.gif" alt="" style="height: 22px; vertical-align: middle; margin-right: 5px;">Más Psique <br><small>(A Rotom)</small></td>
+                        <td><img src="rotom horno.gif" alt="" style="height: 22px; vertical-align: middle; margin-right: 5px;">Maquinación</td>
+                        <td><img src="lunatone.gif" alt="" style="height: 22px; vertical-align: middle; margin-right: 5px;">Joya de Luz</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight-turn">T9</td>
+                        <td><img src="chandelure.gif" alt="" style="height: 22px; vertical-align: middle; margin-right: 5px;">Bola Sombra</td>
+                        <td><img src="rotom horno.gif" alt="" style="height: 22px; vertical-align: middle; margin-right: 5px;">Rayo</td>
+                        <td><img src="lunatone.gif" alt="" style="height: 22px; vertical-align: middle; margin-right: 5px;">Joya de Luz</td>
+                    </tr>
+                    <tr>
+                        <td class="highlight-turn">T10</td>
+                        <td><img src="chandelure.gif" alt="" style="height: 22px; vertical-align: middle; margin-right: 5px;">Bola Sombra</td>
+                        <td><img src="rotom horno.gif" alt="" style="height: 22px; vertical-align: middle; margin-right: 5px;">Rayo</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="tip-box">
+            <strong>¿Cómo salir si no tengo Vuelo?</strong><br>
+            Solo inicia un combate salvaje, cierra sesión por completo del juego y, al volver a entrar, aparecerás directamente curado en el último Centro Pokémon visitado.
+        </div>
+
+        <div class="footer-credits">
+            <strong>Guía en Video:</strong><br>
+            <a href="https://youtu.be/QEwUZKASfel" target="_blank" class="video-link">Ver tutorial original en YouTube</a>
+            <br><br>
+            Esta guía escrita fue elaborada por <strong>Paxpo</strong>. Cabe aclarar que la estrategia original no me pertenece; mi intención es simplemente acercar esta información a la comunidad hispanohablante, facilitando su comprensión y difusión. Todos los créditos corresponden a su creador original.
+        </div>
+    </div>
+
+</body>
+</html>
